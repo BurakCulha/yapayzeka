@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="myThinkTank" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/myThinkTank" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+					<Add library="sfml-audio-d" />
+					<Add library="sfml-network-d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/myThinkTank" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-network" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="D:/sfml/SFML-2.5.1/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="D:/sfml/SFML-2.5.1/lib" />
+		</Linker>
+		<Unit filename="classbase.cpp" />
+		<Unit filename="ex2.cpp" />
+		<Unit filename="ex3.cpp" />
+		<Unit filename="ex4.cpp" />
+		<Unit filename="ex5.cpp" />
+		<Unit filename="ex6.cpp" />
+		<Unit filename="ex8.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="exp7.cpp" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
